@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=com.evolveos.evoassist
+Exec=/usr/libexec/evoassist-wrapper
+User=root
