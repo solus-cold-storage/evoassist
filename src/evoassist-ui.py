@@ -187,12 +187,13 @@ users!"""
         layout.pack_start(bugs, False, False, 10)
 
         return layout
-    def on_repl(self, o):            
-        print "ok %s" % str(o)
+    def on_repl(self, o):      
+        pass      
+        #print "ok %s" % str(o)
 
     def on_err(self, o):
         self.install_btn.set_sensitive(True)
-        print "error %s" % str(o)
+        #print "error %s" % str(o)
 
     def do_prog(self, pct, message):
         if str(message).startswith("ERROR: "):
@@ -213,7 +214,7 @@ users!"""
                 self.install_btn.hide()
                 self.tick.show()
         # for the curious/debugs
-        print message
+        #print message
 
 if __name__ == "__main__":
     DBusGMainLoop(set_as_default=True)
