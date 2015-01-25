@@ -93,13 +93,13 @@ class EvoWelcome(Gat.SidebarWindow):
         layout.set_halign(Gtk.Align.START)
 
         words = """
-Welcome to Evolve OS. Please note this project is still in its infancy, and users
-are encouraged to report any issues that they find. Also note, this tool is also
-brand new and has limitations and bugs.
+Welcome to Evolve OS. Please note this project is still in its infancy,
+and users are encouraged to report any issues that they find. Also note,
+this tool is also brand new and has limitations and bugs.
 
-<i>Negativity aside...</i> we really hope you enjoy using Evolve OS, and look
-forward to your support and feedback in making the distribution better for future
-users!"""
+<i>Negativity aside...</i> we really hope you enjoy using Evolve OS, and
+look forward to your support and feedback in making the distribution better
+for future users!"""
         content = Gtk.Label(words)
         content.set_halign(Gtk.Align.START)
         content.set_valign(Gtk.Align.START)
@@ -141,7 +141,7 @@ users!"""
         lbox = Gtk.ListBox()
         scroller.add(lbox)
 
-        item = self.create_item("Google Chrome", "google-chrome", "Google Chrome is a free to use web browser for your computer")
+        item = self.create_item("Google Chrome", "google-chrome", "Google Chrome is a free to use web browser")
         wrap = Gtk.HBox(0)
         wrap.pack_start(item, True, True, 0)
         spin = Gtk.Spinner()
@@ -179,11 +179,11 @@ users!"""
     def create_support_page(self):
         layout = Gtk.VBox(0)
 
-        irc = self.create_item("Get help on IRC in real time", "im-irc", "Talk to other Evolve OS users in real time, and resolve issues with other volunteers", link="irc://irc.freenode.net/#evolveos")
+        irc = self.create_item("Get help on IRC in real time", "im-irc", "Talk to other Evolve OS users in real time", link="irc://irc.freenode.net/#evolveos")
         layout.pack_start(irc, False, False, 10)
-        forums = self.create_item("Get help on our forums", "applications-internet", "Help others or get helped, leave a post on the forums and someone will get back to you!", link="https://evolve-os.com/forums")
+        forums = self.create_item("Get help on our forums", "applications-internet", "Help others or get helped, leave a post on the forums", link="https://evolve-os.com/forums")
         layout.pack_start(forums, False, False, 10)
-        bugs = self.create_item("Report a bug", "tools-report-bug", "Reporting bugs helps us to improve the project for both you, and future users", link="https://evolve-os.com/project/")
+        bugs = self.create_item("Report a bug", "dialog-error", "Reporting bugs helps us to improve the project for everyone", link="https://evolve-os.com/project/")
         layout.pack_start(bugs, False, False, 10)
 
         return layout
