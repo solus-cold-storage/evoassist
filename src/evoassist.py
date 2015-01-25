@@ -198,7 +198,7 @@ class EvoAssistService(dbus.service.Object):
             return
         try:
             kids = os.listdir(options.output_dir)
-            pisi.api.install(["%s/%s" % (options.output_dir, kids[0])])
+            pisi.api.install(["%s/%s" % (options.output_dir, kids[0])], reinstall=True,)
             os.system("rm %s/*.eopkg" % options.output_dir)
         except Exception:
             print e

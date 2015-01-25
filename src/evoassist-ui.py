@@ -195,7 +195,7 @@ users!"""
         print "error %s" % str(o)
 
     def do_prog(self, pct, message):
-        if message.startswith("ERROR: "):
+        if str(message).startswith("ERROR: "):
             content = message.split("ERROR: ")[1]
             d = Gtk.MessageDialog(self, Gtk.DialogFlags.DESTROY_WITH_PARENT | Gtk.DialogFlags.MODAL,
                                   Gtk.MessageType.ERROR, Gtk.ButtonsType.CLOSE,
