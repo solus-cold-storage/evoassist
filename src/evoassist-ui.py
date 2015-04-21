@@ -93,7 +93,7 @@ class EvoWelcome(Gat.SidebarWindow):
         layout.set_halign(Gtk.Align.START)
 
         words = """
-Welcome to Evolve OS. Please note this project is still in its infancy,
+Welcome to the Solus Operating System. Please note this project is still in its infancy,
 and users are encouraged to report any issues that they find. Also note,
 this tool is also brand new and has limitations and bugs.
 
@@ -179,11 +179,11 @@ for future users!"""
     def create_support_page(self):
         layout = Gtk.VBox(0)
 
-        irc = self.create_item("Get help on IRC in real time", "im-irc", "Talk to other Evolve OS users in real time", link="irc://irc.freenode.net/#evolveos")
+        irc = self.create_item("Get help on IRC in real time", "im-irc", "Talk to other Evolve OS users in real time", link="irc://irc.freenode.net/#solus")
         layout.pack_start(irc, False, False, 10)
-        forums = self.create_item("Get help on our forums", "applications-internet", "Help others or get helped, leave a post on the forums", link="https://evolve-os.com/forums")
+        forums = self.create_item("Get help on our forums", "applications-internet", "Help others or get helped, leave a post on the forums", link="https://solus-project.com/forums")
         layout.pack_start(forums, False, False, 10)
-        bugs = self.create_item("Report a bug", "dialog-error", "Reporting bugs helps us to improve the project for everyone", link="https://evolve-os.com/project/")
+        bugs = self.create_item("Report a bug", "dialog-error", "Reporting bugs helps us to improve the project for everyone", link="https://github.com/solus-project/repository/issues")
         layout.pack_start(bugs, False, False, 10)
 
         return layout
