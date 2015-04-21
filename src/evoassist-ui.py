@@ -82,8 +82,8 @@ class EvoWelcome(Gat.SidebarWindow):
     def create_welcome_page(self):
         layout = Gtk.VBox(0)
 
-        version = "Evolve OS"
-        with open("/etc/evolveos-release", "r") as inp:
+        version = "Solus Operating System"
+        with open("/etc/solus-release", "r") as inp:
             lines = inp.readlines()
             version = lines[0].replace("\r","").replace("\n", "")
 
