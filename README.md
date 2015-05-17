@@ -1,4 +1,4 @@
 evoassist
 =========
 
-Evolve OS Assistant
+Solus Assistant
